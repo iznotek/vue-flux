@@ -61,8 +61,12 @@ export default class TransitionsController {
 			if (!found)
 				throw new ReferenceError(`Transition ${transition} not found`);
 
+			let options = transition.options || undefined
 			transition = JSON.parse(JSON.stringify(found));
 
+			if (options) {
+				Object.assign(transition.options, options);
+			}
 		} else {
 			transition = JSON.parse(JSON.stringify(this.next));
 		}

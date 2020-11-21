@@ -26,6 +26,10 @@
 				type: Boolean,
 				default: true,
 			},
+			transition: {
+				type: Object,
+				default: undefined,
+			},
 		},
 
 		data: () => ({
@@ -67,7 +71,7 @@
 				if (Transitions.current)
 					Transitions.end(true);
 
-				Transitions.run(undefined, Images.current, Images.imgs[0], 'next');
+				Transitions.run(this.transition, Images.current, Images.imgs[0], 'next');
 			},
 		}
 	};
