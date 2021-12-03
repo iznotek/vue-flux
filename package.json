@@ -18,6 +18,9 @@
   "bugs": "https://github.com/ragnarlotus/vue-flux/issues",
   "homepage": "https://ragnarlotus.github.com/vue-flux-docs",
   "main": "dist/vue-flux.umd.min.js",
+  "module": "dist/zircle.umd.js",
+  "unpkg": "dist/zircle.umd.js",
+  "jsdelivr": "dist/zircle.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "npm run bundle:nossr && npm run bundle:ssr",
