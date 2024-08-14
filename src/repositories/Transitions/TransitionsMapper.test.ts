@@ -26,9 +26,9 @@ describe('repositories: TransitionsMapper', () => {
 
 		expect(transitionsWithOptions[0].component).toBe(Fade);
 		expect(transitionsWithOptions[1].component).toBe(Kenburn);
-		expect(transitionsWithOptions[1].options.totalDuration).toBe(1600);
+		expect((transitionsWithOptions[1] as any).options.totalDuration).toBe(1600);
 		expect(transitionsWithOptions[2].component).toBe(Swipe);
 		expect(transitionsWithOptions[3].component).toBe(Slide);
-		expect(transitionsWithOptions[3].options.totalDuration).toBe(4600);
+		expect((transitionsWithOptions[3] as any).options.totalDuration).toBe(4600);
 	});
 });

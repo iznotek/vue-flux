@@ -18,7 +18,8 @@
 		"strict": true,
 		"noUnusedLocals": true,
 		"esModuleInterop": true,
-		"noUnusedParameters": true
+		"noUnusedParameters": true,
+		"declaration": false
 	},
 	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
 	"exclude": ["src/App.vue", "src/main.ts"],

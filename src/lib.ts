@@ -1,3 +1,13 @@
+declare global {
+    interface Window {
+        [key: string]: any 
+    }
+
+	interface Element {
+        [key: string]: any 
+    }
+}
+
 export * from './components';
 export * from './complements';
 export * from './resources';

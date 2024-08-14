@@ -6,7 +6,7 @@ export default function useComponent(
 	$el: Ref<null | HTMLElement>,
 	props: ComponentProps,
 	css: ComponentStyles
-) {
+): any {
 	if (css.base === undefined) {
 		css.base = {} as CSSProperties;
 	}
